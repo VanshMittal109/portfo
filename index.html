@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal art portfolio — illustration, traditional work, digital art, storyboards, and character design.">
+    <title>Midnight render</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Decorative grain overlay (CSS only, non-interactive) -->
+    <div class="grain" aria-hidden="true"></div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <header class="site-header">
+        <div class="nav-inner">
+            <a class="logo" href="#top">Midnight render</a>
+
+            <!-- CSS-only mobile menu toggle (no JavaScript) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-button">
+                <span class="menu-button__icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Open or close navigation</span>
+            </label>
+
+            <nav class="site-nav" aria-label="Primary">
+                <label for="menu-toggle" class="nav-backdrop" aria-hidden="true"></label>
+                <ul class="nav-list">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#traditional-art">Traditional Art</a></li>
+                    <li><a href="#digital-art">Digital Art</a></li>
+                    <li><a href="#storyboard">Storyboard</a></li>
+                    <li><a href="#character-design">Character Design</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ===================== HERO ===================== -->
+        <section class="hero" id="top" aria-label="Introduction">
+            <div class="hero__glow" aria-hidden="true"></div>
+            <div class="hero__blob hero__blob--one" aria-hidden="true"></div>
+            <div class="hero__blob hero__blob--two" aria-hidden="true"></div>
+
+            <div class="hero__grid">
+                <div class="hero__copy">
+                    <p class="section-label">Artist • Illustrator • Storyteller</p>
+                    <h1 class="hero__title">
+                        Art<br>
+                        that<br>
+                        tells<br>
+                        stories.
+                    </h1>
+                    <a class="btn" href="#traditional-art">Explore my work</a>
+                </div>
+
+                <div class="hero__gallery" aria-hidden="false">
+                    <p class="hand-accent hero__note">sketches from the studio</p>
+
+                    <!-- REPLACE hero images in assets/hero/ -->
+                    <figure class="polaroid polaroid--hero polaroid--back">
+                        <img src="trad/t4.jpeg" alt="Studio artwork study — replace with your piece">
+                    </figure>
+                    <figure class="polaroid polaroid--hero polaroid--mid">
+                        <img src="trad/t6.jpeg" alt="Layered illustration — replace with your piece">
+                    </figure>
+                    <figure class="polaroid polaroid--hero polaroid--front">
+                        <img src="trad/t9.jpeg" alt="Featured illustration — replace with your piece">
+                    </figure>
+
+                    <span class="deco-ring" aria-hidden="true"></span>
+                    <span class="deco-dot" aria-hidden="true"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT ME ===================== -->
+        <section class="about" id="about">
+            <div class="about__grid">
+                <div class="about__portrait-wrap">
+                    <p class="hand-accent about__scribble">this is me</p>
+                    <figure class="about__frame">
+                        <!-- REPLACE assets/hero/portrait.jpg with your portrait or profile artwork -->
+                        <img src="assest\img.jpeg" alt="Portrait of [ARTIST NAME] — replace with your photo or self-portrait">
+                    </figure>
+                    <span class="about__frame-line" aria-hidden="true"></span>
+                </div>
+
+                <div class="about__content">
+                    <p class="section-label">About me</p>
+                    <h2 class="section-title">Hi, I'm vaibhavi rajvansh,</h2>
+
+                    <!-- REPLACE the three paragraphs below with your own about text -->
+                    <p>an animation student and digital artist  with a background in watercolor painting and a growing passion for visual storytelling. I'm drawn to interesting characters, cinematic compositions, and the small details that make a scene feel alive. My work is inspired by nature, films, everyday moments, and the worlds that exist somewhere between observation and imagination.]</p>
+                    <p>Alongside illustration and character design, I have a strong interest in storyboarding as a way of shaping narrative, emotion, and movement through visual sequences. I enjoy exploring how stories can be communicated clearly and effectively through images, whether it's a single illustration or a larger narrative project.</p>
+                    <p>As an artist, I value curiosity, collaboration, and communication. I enjoy sharing ideas, and bringing creative concepts to life through thoughtful visual storytelling. This portfolio is a collection of my ongoing journey—experiments, studies, and projects that reflect both my growth and my aspirations as a storyteller and artist.</p>
+
+                
+
+                    <dl class="about__meta">
+                        <div>
+                            <dt>Based in</dt>
+                            <dd>India</dd>
+                        </div>
+                        <div>
+                            <dt>Mediums</dt>
+                            <dd>Traditional &amp; Digital</dd>
+                        </div>
+                        
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TRADITIONAL ART ===================== -->
+        <section class="traditional" id="traditional-art">
+            <div class="traditional__grid">
+                <div class="traditional__copy">
+                    <p class="section-label">01 — Traditional art</p>
+                    <h2 class="section-title">Before the screen, there is paper.</h2>
+                    <!-- REPLACE traditional art description -->
+                    <p class="traditional__lead">
+                        I am a traditional artist ,works with watercolor medium. What started as a love for painting gradually became a way for me to tell stories and express ideas visually. I enjoy experimenting with color, texture, and mood to create artwork that feels both personal and engaging. Inspired by everyday moments, nature, imagination and music.
+                    </p>
+                    <p class="traditional__note">
+                        Pencil, ink, watercolor, and the small accidents that only happen on a page.
+                    </p>
+                    
+                </div>
+
+                <div class="polaroid-viewer">
+                    
+                    <input type="radio" name="traditional" id="art1" checked>
+                    <input type="radio" name="traditional" id="art2">
+                    <input type="radio" name="traditional" id="art3">
+                    <input type="radio" name="traditional" id="art4">
+
+                    <div class="polaroid-stage" aria-live="polite">
+                        
+                        <figure class="polaroid polaroid-card polaroid-1">
+                            <img src="trad/t1.jpeg" alt="Traditional artwork 1 — replace with your piece">
+                            
+                        </figure>
+                        <figure class="polaroid polaroid-card polaroid-2">
+                            <img src="trad/t2.jpeg" alt="Traditional artwork 2 — replace with your piece">
+                            
+                        </figure>
+                        <figure class="polaroid polaroid-card polaroid-3">
+                            <img src="trad/t5.jpeg" alt="Traditional artwork 3 — replace with your piece">
+                            
+                        </figure>
+                        <figure class="polaroid polaroid-card polaroid-4">
+                            <img src="trad/t7.jpeg" alt="Traditional artwork 4 — replace with your piece">
+                            
+                        </figure>
+                        
+                    </div>
+
+                    <div class="polaroid-picks" role="tablist" aria-label="Traditional artwork selector">
+                        <label class="pick" for="art1">
+                            <img src="trad/t1.jpeg" alt="">
+                            <span>01</span>
+                        </label>
+                        <label class="pick" for="art2">
+                            <img src="trad/t2.jpeg" alt="">
+                            <span>02</span>
+                        </label>
+                        <label class="pick" for="art3">
+                            <img src="trad/t5.jpeg" alt="">
+                            <span>03</span>
+                        </label>
+                        <label class="pick" for="art4">
+                            <img src="trad/t7.jpeg" alt="">
+                            <span>04</span>
+                        </label>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== DIGITAL ART ===================== -->
+        <section class="digital" id="digital-art">
+            <div class="digital__intro">
+                <p class="section-label">02 — Digital art</p>
+                <h2 class="section-title">Color, light, and invented worlds.</h2>
+                <p>
+                    i learnt digital art in 2025 , i am very comfortable with photoshop , clip studio, krita and FireAlpaca . as a digital artist , i feel my art is no more restricted to be a scribble on a paper but now have an opportunity to come to live with the help to the my knowledge .
+                </p>
+            </div>
+
+            <div class="carousel" aria-label="Digital artwork carousel">
+                <div class="carousel-track">
+                    <div class="carousel-set">
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d1.jpeg" alt="[DIGITAL ART TITLE 01]">
+                        </div>
+                        <h3>Demon slayer</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d2.jpeg" alt="[DIGITAL ART TITLE 02]">
+                        </div>
+                        <h3>---</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d3.jpeg" alt="[DIGITAL ART TITLE 03]">
+                        </div>
+                        <h3>hollows moving castle</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d4.jpeg" alt="[DIGITAL ART TITLE 04]">
+                        </div>
+                        <h3>---</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d5.jpeg" alt="[DIGITAL ART TITLE 05]">
+                        </div>
+                        <h3>The face of a lake</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d6.jpeg" alt="[DIGITAL ART TITLE 06]">
+                        </div>
+                        <h3>Pearl</h3>
+                        </article>
+                    </div>
+                    <div class="carousel-set">
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d1.jpeg" alt="[DIGITAL ART TITLE 01]">
+                        </div>
+                        <h3>Demon slayer</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d2.jpeg" alt="[DIGITAL ART TITLE 02]">
+                        </div>
+                        <h3>---</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d3.jpeg" alt="[DIGITAL ART TITLE 03]">
+                        </div>
+                        <h3>hollows moving castle</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d4.jpeg" alt="[DIGITAL ART TITLE 04]">
+                        </div>
+                        <h3>---</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d5.jpeg" alt="[DIGITAL ART TITLE 05]">
+                        </div>
+                        <h3>The face of a lake</h3>
+                    </article>
+                    <article class="art-card">
+                        <div class="art-card__image">
+                            <img src="da/d6.jpeg" alt="[DIGITAL ART TITLE 06]">
+                        </div>
+                        <h3>Pearl</h3>
+                        </article>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== STORYBOARD ===================== -->
+        <section class="storyboard" id="storyboard">
+            <div class="section-head">
+                <p class="section-label">03 — Storyboard</p>
+                <h2 class="section-title">Sequences, stills, and the space between frames.</h2>
+                <p>
+                    i have done storyboarding for my college assignments mostly but i feel storyboarding is a major step in any movie's   pre-production as it explain the visual of the whole movie and makes it more easy for other production team to visualise the shots . being a student of animation and an artist , i have a very keen interest in storyboarding  .
+                </p>
+            </div>
+
+            <div class="story-grid">
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <!-- REPLACE assets/storyboard/storyboard-01.jpg -->
+                        <img src="sb/unnamed.jpg" alt="Storyboard still for [STORYBOARD TITLE 01]">
+                    </div>
+                    <div class="story-card__body">
+                        <h3>The spy cat</h3>
+                        <p>a spy cat travel all over the world try to catch a mouse who stole villager's money</p>
+                        
+                        <a class="btn btn--small" href="https://drive.google.com/file/d/1VdFdQ8KxdtD5sLofZES1GJZTX5iQAlYS/view" target="_blank" rel="noopener noreferrer">View storyboard</a>
+                    </div>
+                </article>
+
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <img src="sb/unnamed (1).jpg" alt="Storyboard still for [STORYBOARD TITLE 02]">
+                    </div>
+                    <div class="story-card__body">
+                        <h3>Padma</h3>
+                        <p>a music video on "chand tu nabhatla" ,where A MAN crochet lotus flower for his wife, symbolizing his love that will never die like the crochet lotus even after any argument.</p>
+                        <a class="btn btn--small" href="https://drive.google.com/file/d/1INSYvt2Oo3hwLUgqYF1LiK6TyWAAjc_M/view" target="_blank" rel="noopener noreferrer">View storyboard</a>
+                    </div>
+                </article>
+
+                <article class="story-card">
+                    <div class="story-card__image">
+                        <img src="sb/unnamed (2).jpg" alt="Storyboard still for [STORYBOARD TITLE 03]">
+                    </div>
+                    <div class="story-card__body">
+                        <h3>PAGEBOUND</h3>
+                        <p>an artist's creation breaks the line between the two different worlds</p>
+                        <a class="btn btn--small" href="https://drive.google.com/file/d/1UbiocL4Lees7xVGv9EXo4_CaZYUambbN/view" target="_blank" rel="noopener noreferrer">View storyboard</a>
+                    </div>
+                </article>  
+            </div>
+        </section>
+
+        <!-- ===================== CHARACTER DESIGN ===================== -->
+        <section class="characters" id="character-design">
+            <div class="section-head">
+                <p class="section-label">04 — Character design</p>
+                <h2 class="section-title">Faces that carry a world on their shoulders.</h2>
+            </div>
+
+            <div class="character-grid">
+                <article class="character-card character-card--tall">
+                    <div class="character-card__image">
+                        <img src="CH/c1.jpeg" alt="Character portrait of [CHARACTER NAME 01]">
+                    </div>
+                    
+                </article>
+                <article class="character-card">
+                    <div class="character-card__image">
+                        <img src="CH/c2.jpeg" alt="Character portrait of [CHARACTER NAME 02]">
+                    </div>
+                    
+                </article>
+                <article class="character-card">
+                    <div class="character-card__image">
+                        <img src="CH/c3.jpeg" alt="Character portrait of [CHARACTER NAME 03]">
+                    </div>
+                    
+                </article>
+                <article class="character-card character-card--wide">
+                    <div class="character-card__image">
+                        <img src="CH/c4.jpeg" alt="Character portrait of [CHARACTER NAME 04]">
+                    </div>
+                    
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-copy">© 2026 Vaibhavi Rajvansh</p>
+            <p class="footer-mark">Art • Stories • Imagination</p>
+            <ul class="footer-links">                
+                <li><a href="mailto:[vaibhavirajvansh26@gmail.com]">Email</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
